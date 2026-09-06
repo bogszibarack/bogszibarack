@@ -175,22 +175,26 @@ def header(d, portrait):
         return f'<rect x="{cx}" y="{y}" width="{cwid}" height="1" fill="{BORDER}"/>'
 
     b.append(text(cx, 78, u["name"], 32, FG, 700))
-    b.append(text(cx, 104, "Junior szoftverfejlesztő · Budapest", 12.5, DIM))
+    b.append(text(cx, 104, "Szoftverfejlesztő · Budapest", 12.5, DIM))
     b.append(rule(122))
 
     # A gépelődő sor az egyetlen mozgó elem. Szándékosan: ha minden animál,
     # semmi nem hívja fel magára a figyelmet.
+    #
+    # A négy mondatban NINCS darabszám ("hat projekt", "négy nyelv"). Az ilyen
+    # kézzel beírt szám a következő repónál elavul, és senki nem veszi észre —
+    # a projektek és a nyelvek számát úgyis a kártyák számolják ki az adatból.
     b.append(typing([
-        "Magic xpa / xpi · .NET · JavaScript",
-        "üzleti folyamat → modul → integráció",
-        "amit leírok, azt meg is tudom védeni",
-        "$ node --test    ✓ 8 passing",
+        "Flutter appok · .NET + Angular webek",
+        "shift_app · FitnessApp · TeamCalendar",
+        "árnyékoló konfigurátor JS-ben, teszttel",
+        "most éppen: Magic xpa / xpi",
     ], cx, 154, 13))
 
     b.append(rule(176))
-    bio = ["Backend-közeli fejlesztést csinálok: adatmodell, üzleti",
-           "szabályok, integrációk. Ami érdekel, az a folyamat —",
-           "hogy a kód tényleg azt csinálja, amit a cég csinál."]
+    bio = ["Mobilappokat írok Flutterben, webet .NET-ben és",
+           "Angularban. A legutóbbi egy B2B konfigurátor —",
+           "adatmodell, szabálymotor, árazás, integrációk."]
     for i, ln in enumerate(bio):
         b.append(text(cx, 206 + i * 18, ln, 11.5, DIM))
     b.append(rule(266))
