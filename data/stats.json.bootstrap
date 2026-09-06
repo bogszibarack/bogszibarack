@@ -1,0 +1,37 @@
+{
+  "_megjegyzes": "Induló fájl, hogy a repó klónozás után is renderelhető legyen. A scripts/generate_stats.py első lefutása felülírja valódi adattal, és a 'placeholder' mező eltűnik.",
+  "calendar": [],
+  "generated": "1970-01-01",
+  "languages": [],
+  "placeholder": true,
+  "repos": [],
+  "streak": {
+    "current": 0,
+    "days_tracked": 0,
+    "longest": 0
+  },
+  "totals": {
+    "active_repos_year": 0,
+    "commits_year": 0,
+    "contributions_year": 0,
+    "forks": 0,
+    "issues": 0,
+    "issues_year": 0,
+    "merged_prs": 0,
+    "prs_year": 0,
+    "repos": 0,
+    "reviews_year": 0,
+    "stars": 0
+  },
+  "user": {
+    "followers": 0,
+    "following": 0,
+    "login": "bogszibarack",
+    "name": "Kókai Ádám",
+    "since": "—"
+  },
+  "window": {
+    "from": "—",
+    "to": "—"
+  }
+}
