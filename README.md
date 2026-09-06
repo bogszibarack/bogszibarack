@@ -46,6 +46,9 @@ Mert az `<img>`-SVG nem tudja megkérdezni, hogy a GitHub épp világos vagy sö
 **Miért nem futtatja a workflow a portré-szkriptet?**
 Mert az OpenCV-t igényel, a fotó pedig nem változik. Az ASCII-rács egyszer készül el, és `data/portrait.txt`-ként verziókövetett. Az éjszakai futásnak így nincs `pip install` lépése — nincs mitől eltörnie.
 
+**Miért kell külön token?**
+A workflow beépített `GITHUB_TOKEN`-je repó-hatókörű: a repókat és a csillagokat le tudja kérni, a hozzájárulási naptárat (`contributionsCollection`) viszont nem, mert az felhasználói adat. Ezért a workflow először a `PROFILE_TOKEN` titkot keresi (classic PAT, `read:user` jogosultsággal), és csak ha nincs, esik vissza a beépítettre.
+
 **Miért nem ingadoznak a számok?**
 Az időablak egész UTC-napokra van rögzítve (nem „most mínusz 365 nap"), a repó-lekérdezés pedig `privacy: PUBLIC` szűrőt kap. Enélkül minden futás más eredményt adna, és minden éjjel keletkezne egy zajos commit.
 
