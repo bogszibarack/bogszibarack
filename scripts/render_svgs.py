@@ -188,7 +188,7 @@ def header(d, portrait):
         "Flutter appok · .NET + Angular webek",
         "shift_app · FitnessApp · TeamCalendar",
         "árnyékoló konfigurátor JS-ben, teszttel",
-        "most éppen: Magic xpa / xpi",
+        "Java · C# · JavaScript",
     ], cx, 154, 13))
 
     b.append(rule(176))
