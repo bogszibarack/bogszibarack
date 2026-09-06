@@ -1,4 +1,4 @@
-<img src="assets/header.svg" alt="Kókai Ádám — junior szoftverfejlesztő" width="900">
+<img src="assets/header.svg" alt="Kókai Ádám — szoftverfejlesztő" width="900">
 
 <img src="assets/stats.svg" alt="Áttekintés" width="440"> <img src="assets/streak.svg" alt="Aktivitás" width="440">
 
